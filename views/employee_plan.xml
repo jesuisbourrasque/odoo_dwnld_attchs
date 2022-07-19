@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+        <record id="employee_plan_form" model="ir.ui.view">
+        <field name="name">employee.plan.form</field>
+        <field name="model">employee.plan</field>
+        <field name="arch" type="xml">
+            <form name="Employee plan">
+                <group>
+                    <group>
+                        <field name="employee_id"/>
+                        <field name="planned_amount"/>
+                    </group>
+                    <group>
+                        <field name="hourly_rate"/>
+                        <field name="work_hours"/>
+                    </group>
+                </group>
+            </form>
+        </field>
+    </record>
+</odoo>
