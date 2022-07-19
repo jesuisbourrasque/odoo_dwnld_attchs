@@ -6,7 +6,7 @@ from odoo import http
 
 class DownloadZipFile(http.Controller):
     @http.route("/download_attachments/", type="http", auth="user", website=True)
-    def download_attachments_product_routes(self, **data):
+    def download_attachments(self, **data):
         attachments_items = http.request.env["ir.attachment"].search(
             [("res_id", "=", data.get("res_id")), ("res_model", "=", "department.plan")])
         in_memory = BytesIO()
